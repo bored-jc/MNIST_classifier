@@ -21,7 +21,6 @@ function getModel() {
 	model.add(tf.layers.maxPooling2d({poolSize: [2, 2]}));
     model.add(tf.layers.flatten());
 	model.add(tf.layers.dense({units: 256, activation: 'relu'}));
-	model.add(tf.layers.dense({units: 128, activation: 'relu'}));
 	model.add(tf.layers.dense({units: 10, activation: 'softmax'}));
     
     
